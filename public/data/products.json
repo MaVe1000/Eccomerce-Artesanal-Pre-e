@@ -1,0 +1,137 @@
+[
+  {
+    "id": "1",
+    "name": "Cuenco de cerámica esmaltado",
+    "description": "Cuenco hecho a mano con esmalte azul profundo, ideal para sopas o decoración.",
+    "price": 4200,
+    "currency": "ARS",
+    "image": "../images/cuenco-ceramica.png",
+    "category": "ceramica"
+  },
+  {
+    "id": "2",
+    "name": "Pulsera de macramé",
+    "description": "Pulsera tejida con hilo encerado y cuentas de madera, ajustable.",
+    "price": 2500,
+    "currency": "ARS",
+    "image": "../images/pulsera-macrame.jpg",
+    "category": "joyeria"
+  },
+  {
+    "id": "3",
+    "name": "Bolso de yute natural",
+    "description": "Bolso ecológico hecho con yute, ideal para compras o playa.",
+    "price": 4500,
+    "currency": "ARS",
+    "image": "../images/bolso-yute.jpg",
+    "category": "textiles"
+  },
+  {
+    "id": "4",
+    "name": "Portavelas de madera tallada",
+    "description": "Portavelas artesanal tallado en madera de algarrobo.",
+    "price": 4500,
+    "currency": "ARS",
+    "image": "../images/portavelas-madera.jpg",
+    "category": "arte"
+  },
+  {
+    "id": "5",
+    "name": "Jabón natural de lavanda",
+    "description": "Jabón artesanal con aceite de oliva y esencia de lavanda.",
+    "price": 1100,
+    "currency": "ARS",
+    "image": "../images/jabon-lavanda.jpg",
+    "category": "cosmetica"
+  },
+  {
+    "id": "6",
+    "name": "Almohadón bordado a mano",
+    "description": "Almohadón con diseño floral bordado a mano sobre lienzo.",
+    "price": 8200,
+    "currency": "ARS",
+    "image": "../images/almohadon-bordado.jpg",
+    "category": "textiles"
+  },
+  {
+    "id": "7",
+    "name": "Collar de piedras naturales",
+    "description": "Collar con amatistas y cuarzo rosa, cierre de plata.",
+    "price": 5700,
+    "currency": "ARS",
+    "image": "../images/collar-piedras.jpg",
+    "category": "joyeria"
+  },
+  {
+    "id": "8",
+    "name": "Taza de cerámica rústica",
+    "description": "Taza hecha a mano con acabado rústico y esmalte interior.",
+    "price": 4100,
+    "currency": "ARS",
+    "image": "../images/taza-rustica.jpg",
+    "category": "ceramica"
+  },
+  {
+    "id": "9",
+    "name": "Cuadro en acuarela",
+    "description": "Obra original en acuarela sobre papel, enmarcada en madera.",
+    "price": 12800,
+    "currency": "ARS",
+    "image": "../images/cuadro-acuarela.jpg",
+    "category": "arte"
+  },
+  {
+    "id": "10",
+    "name": "Estatuas artesanales de porcelana",
+    "description": "Estatua de porcelana Niña Naturaleza.",
+    "price": 2800,
+    "currency": "ARS",
+    "image": "../images/niña-porcelana.jpg",
+    "category": "arte"
+  },
+  {
+    "id": "11",
+    "name": "Set de posavasos de madera",
+    "description": "Set de cuatro posavasos hechos a mano con diseño grabado.",
+    "price": 1800,
+    "currency": "ARS",
+    "image": "../images/posavasos-madera.jpg",
+    "category": "arte"
+  },
+  {
+    "id": "12",
+    "name": "Bufanda tejida a mano",
+    "description": "Bufanda cálida y suave, tejida con lana merino.",
+    "price": 4500,
+    "currency": "ARS",
+    "image": "../images/bufanda-tejida.jpg",
+    "category": "textiles"
+  },
+  {
+    "id": "13",
+    "name": "Set de velas aromáticas",
+    "description": "Set de tres velas hechas a mano con cera de soja y esencias naturales.",
+    "price": 2800,
+    "currency": "ARS",
+    "image": "../images/velas-aromaticas.jpg",
+    "category": "cosmetica"
+  },
+  {
+    "id": "14",
+    "name": "Aretes de plata y turquesa",
+    "description": "Aretes colgantes hechos con plata 925 y piedras de turquesa.",
+    "price": 8200,
+    "currency": "ARS",
+    "image": "../images/aretes-plata-turques.jpg",
+    "category": "joyeria"
+  },
+  {
+    "id": "15",
+    "name": "Velas aromáticas Rosas",
+    "description": "Vela artesanal aromática con esencia de rosas.",
+    "price": 2200,
+    "currency": "ARS",
+    "image": "../images/vela-rosas.jpg",
+    "category": "cosmetica"
+  }
+]
