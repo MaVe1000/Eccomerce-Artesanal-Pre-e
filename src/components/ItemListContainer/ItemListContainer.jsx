@@ -1,10 +1,15 @@
 import { useState, useEffect } from "react";
 import { ItemList } from "../ItemList/ItemList";
+import { useParams } from "react-router-dom";
 
 export const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
+  const { categoryName } = useParams();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
+
     fetch("/data/products.json")
       .then((res) => {
         if (!res.ok) {
@@ -13,21 +18,39 @@ export const ItemListContainer = () => {
         return res.json();
       })
       .then((data) => {
-        setProducts(data);
+        if (categoryName) {
+          const filteredData = data.filter(
+            (prod) => prod.category === categoryName
+          );
+          setProducts(filteredData);
+        } else {
+          setProducts(data); // Si no hay categoría (página de inicio), mostramos todos
+        }
       })
       .catch((err) => {
-        console.err(err);
+        console.error("Error al cargar o filtrar productos:", err);
+        setProducts([]); // En caso de error, mostramos lista vacía
+      })
+      .finally(() => {
+        setLoading(false); //finalizamos la carga
       });
-  }, []);
+  }, [categoryName]);
+
+  const title = categoryName
+    ? `Categoría: ${
+        categoryName.charAt(0).toUpperCase() + categoryName.slice(1)
+      }`
+    : "Bienvenidos a Nuestra Tienda de Artesanías";
 
   return (
-    <section>
-      <h2>Bienvenidos a Nuestra Tienda de Artesanías</h2>
+    <section className="item-list-container">
+      <h2>{title}</h2>
       <p>
-        Explora nuestra colección única de productos artesanales hechos a mano
-        con amor y dedicación.
+        {categoryName
+          ? "Explora nuestros productos seleccionados."
+          : "Explora nuestra colección única de productos artesanales hechos a mano con amor y dedicación."}
       </p>
-      <ItemList list={products} />
+      {loading ? <p>Cargando productos...</p> : <ItemList list={products} />}
     </section>
   );
 };

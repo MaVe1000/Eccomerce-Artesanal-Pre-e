@@ -13,14 +13,14 @@ export const ItemDetailContainer = () => {
         if (!res.ok) {
           throw new Error("No se encontró el producto");
         }
-        res.json();
+        return res.json();
       })
       .then((data) => {
         const found = data.find((prod) => prod.id === id);
         if (found) {
           setDetail(found);
         } else {
-          throw new Error("Producto no encontrado");
+          throw new Error("Producto no encontrado");//en caso de manejar explicitamente el error, habria que poner: setDetail(null);
         }
       })
       .catch((err) => console.log(err));
@@ -30,7 +30,9 @@ export const ItemDetailContainer = () => {
     <main>
       {Object.keys(detail).length ? (
         <ItemDetail detail={detail} />
-      ) : (
+      ) : detail === null ?(
+        <p>Producto con ID ${id} no encontrado.</p>
+    ) : (
         <p>Cargando...</p>
       )}
     </main>
