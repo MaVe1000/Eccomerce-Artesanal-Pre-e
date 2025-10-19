@@ -11,6 +11,7 @@ export const Footer = () => {
           <a href="#">Política de Privacidad</a>
         </nav>
       </div>
+      <p className="dev-vero">Desarrollado por M. Verónica Rebolleda</p>
     </footer>
   );
 };

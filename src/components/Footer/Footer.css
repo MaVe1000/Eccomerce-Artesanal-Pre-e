@@ -1,9 +1,9 @@
 .footer {
   background-color: #6b3e26; /* Marrón oscuro para el footer */
   color: #fff8f0;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem 1rem 2rem;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin-top: 40px;
 }
 
@@ -15,6 +15,10 @@
   margin: 0 auto;
 }
 
+.footer-nav {
+  background-color: #81370f;
+  margin: 0 10px;
+}
 .footer-nav a {
   color: #f0e0c8;
   text-decoration: none;
@@ -26,7 +30,11 @@
   color: #ffffff;
   text-decoration: underline;
 }
-
+.dev-vero {
+  border-top: #f0e0c8 solid 1px;
+  padding-top: 20px;
+  font-size: 0.7rem;
+}
 @media (max-width: 600px) {
   .footer-content {
     flex-direction: column;
